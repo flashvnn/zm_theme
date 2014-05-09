@@ -1,0 +1,29 @@
+name = ZM Theme
+description = Theme extras functions.
+core = 7.x
+
+; PHP version requirement (optional)
+; php = 5.2
+
+; Package name (see http://drupal.org/node/542202 for a list of names)
+; package = example
+
+; Module style sheets and scripts
+; stylesheets[all][] = zm_theme.css
+; scripts[] = zm_theme.js
+
+; Loadable code files
+; files[] = zm_theme.admin.inc
+; files[] = zm_theme.test
+
+; Module dependencies
+; dependencies[] = module_name
+; dependencies[] = module_name (1.0)
+; dependencies[] = module_name (>=1.0)
+; dependencies[] = module_name (1.x)
+
+; Configuration page
+; configure = admin/config/content/zm_theme
+
+; For further information about configuration options, see
+; - http://drupal.org/node/542202

@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * zm_theme.install
+ *
+ * Install, update and uninstall functions for the zm_theme module.
+ */
