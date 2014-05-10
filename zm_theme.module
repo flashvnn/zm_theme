@@ -206,15 +206,9 @@ function zm_theme_field_styled_image_url($image_uri, $style){
 function zm_theme_render($template, $variables){
   $template_file = zm_theme_store_dir() . "/" . $template;
   if(!is_file($template_file)) return "";
+  $render_fn = function_exists('phptemplate_render_template')? 'phptemplate_render_template' : 'theme_render_template';
 
-  extract($variables, EXTR_SKIP);
-  // Start output buffering.
-  ob_start();
-  // Include the template file.
-  include DRUPAL_ROOT . '/' . $template_file;
-
-  // End buffering and return its contents.
-  return ob_get_clean();
+  return $render_fn($template_file, $variables);
 }
 
 function zm_theme_store_dir(){
